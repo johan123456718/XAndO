@@ -21,7 +21,8 @@ public class Main {
     public boolean getXO(String str){
         int xCounter = 0;
         int oCounter = 0;
-        char[] letters = str.toCharArray();
+        String tmp = str.toLowerCase(); //In case if the user types in capital letters
+        char[] letters = tmp.toCharArray();
         
         for(int i = 0 ; i < letters.length; i++){
             
